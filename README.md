@@ -114,13 +114,6 @@ Through the specified parameters and coordinates of the center, the car successf
 
 The Point cloud cluster of the human is detected through the pcl package. Whenever the specified dimensions of the pcl detections are met the car successfully stops by increasing the brake parameters, reducing the throttle to zero and changing the gear to neutral. The above steps ensure that the car doesnt move again.
 
-## Work Distribution
-
-OPENCV - Kushal Thirani 4805569
-
-PCL - Saket Sarawgi 4809254
-
-Control Package - Kushal and Saket
  
 
 
