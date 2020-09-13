@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pcl_obstacle_detector</name>
+  <version>0.0.0</version>
+  <description>The pcl_obstacle_detector package</description>
+
+  <maintainer email="skt@todo.todo">skt</maintainer>
+
+
+  <license>TODO</license>
+ 
+  	<build_depend>roscpp</build_depend>
+		<build_depend>pcl_ros</build_depend>
+		<exec_depend>pcl_ros</exec_depend>
+		<build_depend>pcl_conversions</build_depend>
+		<exec_depend>pcl_conversions</exec_depend>
+		<depend>vision_msgs</depend>
+		
+		
+ 
+
+ <buildtool_depend>catkin</buildtool_depend>
+  <export>
+
+  </export>
+</package>
+
+
