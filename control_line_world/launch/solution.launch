@@ -1,0 +1,39 @@
+ <launch>
+ 
+ 	<include file="$(find car_simulation)/launch/simulation.launch">
+		<arg name="gazebo_gui" value="true" />
+		<arg name="world_name" value="lines.world" />
+		<arg name="rviz" value="true" />
+	</include>
+
+
+
+
+	<node
+   		pkg="control_line_world"
+   		type="control_line_world_node"
+   		name="control_line_world_node"
+   		output="screen"
+   		required="true"
+   		launch-prefix="xterm -e"
+	/>
+	      
+	/node>	
+	<node
+   		pkg="pcl_obstacle_detector"
+   		type="pcl_obstacle_detector_node"
+   		name="pcl_obstacle_detector_node"
+   		output="screen"
+   		required="true"
+   		launch-prefix="xterm -e"
+	/>	
+	<node
+   		pkg="opencv_line_detector"
+   		type="opencv_line_detector_node"
+   		name="opencv_line_detector_node"
+   		output="screen"
+   		required="true"
+   		launch-prefix="xterm -e"
+	/>
+	
+</launch>
